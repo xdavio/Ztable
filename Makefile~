@@ -1,0 +1,4 @@
+document.pdf: table.R document.tex
+	rm table.tex
+	R --vanilla <table.R
+	pdflatex document.tex
